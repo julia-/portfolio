@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Julia Ryan -- Designer and Developer -- @juliax___
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, Jade, CSS3, Stylus
+    Grunt, jQuery, Modernizr
+    Fontawesome

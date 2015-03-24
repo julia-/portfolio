@@ -1,0 +1,82 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title Julia Ryan
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimal-ui')
+		link(rel='stylesheet', href='css/vendor/normalize.min.css')
+		link(rel='stylesheet', type='text/css', href='css/vendor/font-awesome.min.css')
+		link(href='http://fonts.googleapis.com/css?family=Rochester|Source+Sans+Pro:400,500,700', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', href='css/main.css')
+
+		script(src='js/vendor/modernizr-2.6.2-respond-1.1.0.min.js')
+	body
+		<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		.header-container
+			header.wrapper.clearfix
+				h1.title Julia Ryan
+				nav
+					ul
+						li
+							a(href='#about') About
+						li
+							a(href='#projects') Projects
+						li
+							a(href='#contact') Contact
+		.main-container
+			section#hero
+			.main.wrapper.clearfix
+				section#about
+					h2 About
+					.about-content
+						p Hey there! I’m Julia Ryan. 
+						p I’m currently a work in progress full stack web developer. I'm also interested in visual design and making websites that are usable and accessible to all.
+						p When I'm not coding or reading about code, I'm enjoying spending time with my family and friends, annoying my cats, listening to music and going to gigs, going to exhibitions and spending too much time playing Civilization. 
+						#bits-pieces
+							h3 Bits &amp; pieces
+							i.fa.fa-music 
+								| No band is better than The Clash
+							i.fa.fa-book 
+								| My favourite book is Dostoyevsky's Crime and Punishment
+							i.fa.fa-suitcase 
+								| I could spend the rest of my life in Paris
+							i.fa.fa-coffee 
+								| 212 Blu does the best coffee
+							i.fa.fa-graduation-cap 
+								| I completed General Assembly's Front-End Web Development course in March 2014
+						.about-img
+							img#profile(src='img/julia-profile.jpg', alt='Image: Photo of Julia Ryan')
+				section#projects
+					h2 Projects
+					.project-content
+						h3 Band website project
+						img.project-img(src='img/band-website-project.jpg', alt='Image: Front page of the website')
+						p I designed and developed a website for the band She &amp; Him as part of the Front-End Web Development course I completed at General Assembly.
+					.project-content
+						h3 Major project
+						a(href='http://www.ping-pong.com.au', alt='Coworking Ping Pong Competition')
+							img.project-img(src='img/major-project.jpg', alt='Image: Front page of the website')
+						p For my major assignment in the Front-End Web Development course I designed and developed a website for a Ping Pong competition to be used by startups in Sydney. 
+						i.fa.fa-globe 
+							a(href='http://www.ping-pong.com.au', alt='Coworking Ping Pong Competition') ping-pong.com.au
+					.project-content
+						h3 Ace Metalwork
+						a(href='http://www.acemetalwork.com', alt='Ace Metalwork')
+							img.project-img(src='img/ace-metalwork.jpg', alt='Image: Front page of the website')
+						P After the course I gained my first client. I designed and developed a simple one page website to be used for a local Sydney business. 
+						i.fa.fa-globe 
+							a(href='http://www.acemetalwork.com', alt='Ace Metalwork') acemetalwork.com
+		.footer-container
+			footer#contact.wrapper
+				p Made by Julia Ryan | 
+					a.fa.fa-twitter-square.fa-lg.fa-fw(href='https://twitter.com/juliax___', alt='Follow Julia on Twitter')
+					a.fa.fa-google-plus-square.fa-lg.fa-fw(href='https://plus.google.com/103223406361589288693', alt='Add Julia on Google+')
+					a.fa.fa-instagram.fa-lg.fa-fw(href='http://www.instagram.com/juliana_xxx', alt='Follow Julia on Instagram')
+					a.fa.fa-linkedin-square.fa-lg.fa-fw(href='http://au.linkedin.com/in/juliaryan/', alt='Connect with Julia on LinkedIn')
+					a.fa.fa-envelope-square.fa-lg.fa-fw(href='mailto:julia.ryanx@gmail.com', alt='Email Julia')
+		script(src='js/vendor/jquery-1.11.1.min.js')
+		script(src='js/plugins.js')
+		script(src='js/main.js')
