@@ -100,6 +100,9 @@ nav a {
   height: 200px;
   border-radius: 50%;
 }
+.about-img {
+  margin-top: 2em;
+}
 #projects {
   max-width: 280px;
   margin: 50px auto;
