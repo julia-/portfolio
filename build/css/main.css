@@ -21,6 +21,7 @@ h2 {
 }
 h3 {
   font-size: 26px;
+  text-decoration: underline;
 }
 a {
   color: #fcfff5;
@@ -32,7 +33,7 @@ a:hover {
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: #212121;
   padding: 0.2em 0;
 }
 .wrapper {
@@ -50,6 +51,7 @@ i.fa {
   color: #222;
 }
 i a:hover {
+  text-decoration: underline solid #212121;
   color: #e62240;
   font-weight: 700;
 }
