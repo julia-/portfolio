@@ -1,25 +1,56 @@
 // GENERAL 
+@font-face
+	font-family Oxygen-Bold
+	font-style normal
+	src url('../fonts/Oxygen-Bold.otf')
 
-html
-	font-size 1em
-	line-height 1.4
-	color #222
+@font-face
+	font-family Oxygen
+	font-style normal
+	src url('../fonts/Oxygen.otf')
 
+*
+	margin 0
+	-webkit-margin-before 0
+	-moz-margin-before 0
+	-webkit-margin-after 0
+	-moz-margin-after 0
+	-webkit-margin-start 0
+	-moz-margin-start 0
+	-webkit-margin-end 0
+	-moz-margin-end 0
+	box-sizing border-box
+
+html,
 body
-	font 16px/26px 'Source Sans Pro', Helvetica, Helvetica Neue, Arial
-
-audio,
-canvas,
-img,
-video
-	vertical-align middle
+	width 100%
+	height 100%
+	min-height 100vh
+	margin 0
+	padding 0
+	line-height 1.5
+	font-size 1em
+	color #212121
+	font-family Oxygen, Helvetica, Helvetica Neue, Arial
+section
+	max-width 80%
+	margin 2em auto
+h1
+	margin 0
+	font-size 2.5em
+	font-family 'Rochester', serif
+	color #FCFFF5
+	text-align center
+	
 h2,
 h3
+	font-family Oxygen-Bold, Helvetica, Helvetica Neue, Arial
 	text-transform uppercase
+	
 h2
-	font-size 36px
+	font-size 2em
 h3
-	font-size 26px
+	font-size 1.5em
 	text-decoration underline
 a
 	color #FCFFF5
@@ -32,140 +63,141 @@ a
 	background #ccc
 	color #212121
 	padding 0.2em 0
-
-.wrapper
-	width 90%
-	margin 0 auto
-#bits-pieces
-	padding-bottom 20px
+	
 i.fa
 	display block
-	padding 10px
-.main a
-	color #222
-i a:hover
-	text-decoration underline solid #212121
-	color #E62240
-	font-weight 700
+
+i a
+	font-family Oxygen, Helvetica, Helvetica Neue, Arial
+	color #212121
+	&:hover
+		color #E62240
 
 // HEADER & FOOTER
-
-.header-container,
-.footer-container
+header
+	display inline-block
+	width 100%
 	background #1E1E20
-.footer-container footer
-	color #FCFFF5
-	padding 10px 0
-	font-size 14px
-	line-height 2em
-
-.title
-	color #FCFFF5
-	font-size 42px
-	font-family 'Rochester', serif
+	padding 0.25em 0 0.75em 0
 	
-.ie7 .title
+footer
+	background #1E1E20
+	color #FCFFF5
+	padding 1em 0
+	font-size 0.85em
+	text-align center
+  
+.ie7 h1
 	padding-top 20px
+	
 a.fa
-	padding-right 5px
+	padding-right 0.5em
 
 // NAVIGATION SECTION
 
 nav ul
 	margin 0
 	padding 0
-
+	text-align center
+	
+nav li
+	display inline-block
+	padding 0 0.5em
+	
 nav a
 	display block
-	margin-bottom 10px
-	padding 15px 0
-	font-size 20px
-	text-align center
+	margin 0.5em
+	padding 0.25em 0
+	font-family Oxygen-Bold, Helvetica, Helvetica Neue, Arial
+	font-size 1.15em
 	font-weight 700
 	text-transform uppercase
 	
-	
+// WELCOME SECTION
+#welcome
+	margin 3em auto
+	text-align center
+	max-width 80%
+.profile-img
+	margin 2em auto
+#profile
+	width 15em
+	height 15em
+	border-radius 50%
+
 // ABOUT SECTION
 
-#about
-	max-width 280px
-	margin 50px auto
-.about-img
-	max-width 200px
-	margin 10px auto
-#profile
-	width 200px
-	height 200px
-	border-radius 50%
-.about-img
-	margin-top 2em
+#about i
+	margin 2em 0
+	padding 0
+
+.icon-text
+	font-family Oxygen, Helvetica, Helvetica Neue, Arial
+
+.btn-cv
+	display block
+	width 12em
+	margin 2.5em auto
+	padding 1em 2em
+	background-color #E62240
+	text-align center
+	text-transform uppercase
+	font-weight 700
+	font-size 1.25em
+	border-radius 0.15em
+	&:hover
+		background-color #212121
+		color #E62240
 
 // PROJECT SECTION
-
-#projects
-	max-width 280px
-	margin 50px auto
 .project-content
-	padding-bottom 10px
+	padding-bottom 1.5em
 .project-img
 	max-width 280px
 	margin 0 auto
-
 		
 @media only screen and (min-width: 480px)
-	nav a
-		float left
-		width 27%
-		margin 0 1.7%
-		padding 25px 2%
-		margin-bottom 0
-	nav li:first-child a
-		margin-left 0
-	nav li:last-child a
-		margin-right 0
-	nav ul li
-		display inline
-	.oldie nav a
-		margin 0 0.7%
-	#about
-		max-width 420px
-	.about-img
-		max-width 250px
-	#profile
-		width 250px
-		height 250px
-	#projects
-		max-width 420px
+	h1
+		font-size 3em
 	.project-img
-		max-width 420px
+		max-width 100%
+	
 
 @media only screen and (min-width: 768px)
-	.header-container
+	header
 		-webkit-box-shadow 0 3px 3px #000
 		-moz-box-shadow 0 3px 3px #000
 		box-shadow 0 3px 3px #000
-	.title
-		float left
+	section
+		max-width 70%
+	h1
+		display inline-block
+		width 35%
+		text-align left
+		padding-left 1em
 	nav
-		float right
-		width 50%
-	#about
-		max-width 650px
-	#projects
-		max-width 650px
+		display inline-block
+		width 60%
+		text-align right
+	nav ul
+		margin 0
+		padding 0 2em
+		text-align right
+	nav li
+		display inline-block
+		padding 0 1em
 	.project-img
 		max-width 650px
 
 @media only screen and (min-width: 1140px)
-	.wrapper
-		width 1026px /* 1140px - 10% for margins */
-		margin 0 auto
-	.header-container
+	header
 		position fixed
 		width 100%
 		z-index 1000
 	#hero
+		max-width 100%
 		height 100vh
+		margin 0
 		background-image url('../img/paris-hero.jpg')
 		background-size cover
 		background-position center top
@@ -176,59 +208,23 @@ nav a
 		-ms-filter grayscale(1)
 		-o-filter grayscale(1)
 		filter grayscale(1)
+	section
+		max-width 70%
+	#welcome
+		display inline-block
+		width 20%
+		vertical-align top
+		margin 6.4em auto
+		margin-left 15%
 	#about
-		max-width 800px
-		padding-top 70px
-	#projects
-		max-width 800px
-		padding-top 70px
+		display inline-block
+		width 30%
+		margin-top 6.4em
 	.project-img
-		max-width 800px
-.ir
-	background-color transparent
-	border 0
-	overflow hidden
-.ir:before
-	content ""
-	display block
-	width 0
-	height 150%
-
-.hidden
-	display none !important
-	visibility hidden
-
-.visuallyhidden
-	border 0
-	clip rect(0 0 0 0)
-	height 1px
-	margin -1px
-	overflow hidden
-	padding 0
-	position absolute
-	width 1px
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus
-	clip auto
-	height auto
-	margin 0
-	overflow visible
-	position static
-	width auto
-
-.invisible
-	visibility hidden
-
-.clearfix:before,
-.clearfix:after
-	content " "
-	display table
-
-.clearfix:after
-	clear both
-
-.clearfix
-	*zoom 1
+		max-width 100%
+	.project-content
+		max-width inherit
+	
 
 @media print
 	* 
@@ -241,15 +237,6 @@ nav a
 		text-decoration underline
 	a[href]:after
 		content " (" attr(href) ")"
-
-	abbr[title]:after
-		content " (" attr(title) ")"
-
-	.ir a:after,
-	a[href^="javascript:"]:after,
-	a[href^="#"]:after
-		content ""
-
 	img
 		page-break-inside avoid
 	img
@@ -264,4 +251,3 @@ nav a
 	h2,
 	h3
 		page-break-after avoid
-
